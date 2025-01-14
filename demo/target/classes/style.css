@@ -1,0 +1,74 @@
+/* Define a new cool purple background color */
+.root {
+    -fx-background-color: #E0E5EC; /* Lighter, soft lavender */
+}
+
+/* Common styling for labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-family: "Calibri", sans-serif;
+    -fx-text-fill: #4B4B4B; /* Darker shade for better contrast */
+}
+
+/* TextField and PasswordField styling */
+.text-field, .password-field, .text-area {
+    -fx-pref-width: 250px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Calibri", sans-serif;
+    -fx-padding: 5px;
+    -fx-border-color: #CCCCCC; /* Light gray border */
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-background-color: #FFFFFF; /* White background for contrast */
+    -fx-text-fill: #333333; /* Dark text color */
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #6A5ACD; /* Slate blue */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-size: 14px;
+    -fx-font-family: "Calibri", sans-serif;
+    -fx-padding: 6px 24px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 6, 0.5, 0, 0); /* Lighter shadow for depth */
+    -fx-cursor: hand;
+    -fx-alignment: center;
+}
+
+/* Button hover effect */
+.button:hover {
+    -fx-background-color: #836FFF; /* Light slate blue for hover */
+}
+
+/* Entering animation for the GridPane */
+/*@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0px); }
+}
+*/
+.root > GridPane {
+    -fx-animation: fadeIn 0.5s ease-in-out;
+}
+
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #555;
+    -fx-padding-bottom: 20px;
+}
+
+.button:pressed {
+    -fx-background-color: #B0B0B0;
+}
+
+.vbox {
+    -fx-background-color: #f0f0f0; /* Light gray background */
+    -fx-padding: 20; /* Padding around content */
+    -fx-border-color: #d0d0d0; /* Border color */
+    -fx-border-width: 2px; /* Border thickness */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-background-radius: 10px; /* Match border radius for smooth edges */
+}
+
